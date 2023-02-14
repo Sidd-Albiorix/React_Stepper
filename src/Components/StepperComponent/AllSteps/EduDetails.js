@@ -22,16 +22,16 @@ function EduDetails(props) {
                                 {educationDetails.map((item, index) => (
                                     <React.Fragment key={index}>
                                         <Grid item xs={3}>
-                                            <TextInput label={modelDetails.degreeName.label} name={`educationDetails.${index}.degreeName`} />
+                                            <TextInput label={modelDetails.degreeName.label} name={`educationDetails.${index}.degreeName`} required />
                                         </Grid>
                                         <Grid item xs={3}>
-                                            <TextInput label={modelDetails.universityName.label} name={`educationDetails.${index}.universityName`} />
+                                            <TextInput label={modelDetails.universityName.label} name={`educationDetails.${index}.universityName`} required />
                                         </Grid>
                                         <Grid item xs={2}>
-                                            <TextInput label={modelDetails.result.label} name={`educationDetails.${index}.result`} type="number" />
+                                            <TextInput label={modelDetails.result.label} name={`educationDetails.${index}.result`} type="number" required />
                                         </Grid>
                                         <Grid item xs={2}>
-                                            <TextInput label={modelDetails.yearOfPassing.label} name={`educationDetails.${index}.yearOfPassing`} type="number" />
+                                            <TextInput label={modelDetails.yearOfPassing.label} name={`educationDetails.${index}.yearOfPassing`} type="number" required />
                                         </Grid>
 
                                         <Grid item xs={2} style={{ textAlign: 'center' }}>

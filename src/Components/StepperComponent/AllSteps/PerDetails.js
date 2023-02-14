@@ -21,19 +21,19 @@ function PerDetails(props) {
             <h2>Personal Details</h2>
             <Grid container rowSpacing={3} columnSpacing={2} style={{ marginBottom: '20px' }}>
                 <Grid item xs={4}>
-                    <TextInput label={firstName.label} name={firstName.name} />
+                    <TextInput label={firstName.label} name={firstName.name} required />
                 </Grid>
                 <Grid item xs={4}>
-                    <TextInput label={middleName.label} name={middleName.name} />
+                    <TextInput label={middleName.label} name={middleName.name} required />
                 </Grid>
                 <Grid item xs={4}>
-                    <TextInput label={lastName.label} name={lastName.name} />
+                    <TextInput label={lastName.label} name={lastName.name} required />
                 </Grid>
                 <Grid item xs={4}>
-                    <TextInput label={email.label} name={email.name} />
+                    <TextInput label={email.label} name={email.name} required />
                 </Grid>
                 <Grid item xs={4}>
-                    <TextInput label={mobileNumber.label} name={mobileNumber.name} />
+                    <TextInput label={mobileNumber.label} name={mobileNumber.name} required />
                 </Grid>
                 <Grid item xs={4}>
                     <DatePicker label={dateOfBirth.label} name={dateOfBirth.name} inputFormat="DD/MM/YYYY" />
@@ -41,7 +41,7 @@ function PerDetails(props) {
             </Grid>
             <Grid container rowSpacing={2} columnSpacing={2}>
                 <Grid item xs={4}>
-                    <TextInput label={presentAddress.label} name={presentAddress.name} />
+                    <TextInput label={presentAddress.label} name={presentAddress.name} required />
                 </Grid>
                 <Grid item xs={4}>
                     <TextInput label={permanentAddress.label} name={permanentAddress.name} />

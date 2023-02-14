@@ -23,9 +23,12 @@ function Home() {
 
     //Delete employee data
     const onDeleteEmp = (index) => {
-        let filteredData = empData.filter((item, i) => index !== i)
-        setEmpData(filteredData)
-        localStorage.setItem('EmpData', filteredData.length > 0 ? JSON.stringify(filteredData) : [])
+        let confirmText = "Do you want to delete employee no :- " + (Number(index) + 1);
+        if (window.confirm(confirmText) === true) {
+            let filteredData = empData.filter((item, i) => index !== i)
+            setEmpData(filteredData)
+            localStorage.setItem('EmpData', filteredData.length > 0 ? JSON.stringify(filteredData) : [])
+        }
     }
 
     return (

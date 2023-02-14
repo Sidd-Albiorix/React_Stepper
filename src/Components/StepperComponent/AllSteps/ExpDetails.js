@@ -22,16 +22,16 @@ function ExpDetails(props) {
                                 {experienceDetails.map((item, index) => (
                                     <React.Fragment key={index}>
                                         <Grid item xs={3}>
-                                            <TextInput label={modelDetails.comName.label} name={`experienceDetails.${index}.comName`} />
+                                            <TextInput label={modelDetails.comName.label} name={`experienceDetails.${index}.comName`} required />
                                         </Grid>
                                         <Grid item xs={3}>
-                                            <TextInput label={modelDetails.position.label} name={`experienceDetails.${index}.position`} />
+                                            <TextInput label={modelDetails.position.label} name={`experienceDetails.${index}.position`} required />
                                         </Grid>
                                         <Grid item xs={2}>
-                                            <TextInput label={modelDetails.totalYear.label} name={`experienceDetails.${index}.totalYear`} type="number" />
+                                            <TextInput label={modelDetails.totalYear.label} name={`experienceDetails.${index}.totalYear`} type="number" required />
                                         </Grid>
                                         <Grid item xs={2}>
-                                            <TextInput label={modelDetails.lastCTC.label} name={`experienceDetails.${index}.lastCTC`} type="number" />
+                                            <TextInput label={modelDetails.lastCTC.label} name={`experienceDetails.${index}.lastCTC`} type="number" required />
                                         </Grid>
 
                                         <Grid item xs={2} style={{ textAlign: 'center' }}>

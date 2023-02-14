@@ -123,10 +123,10 @@ const FormValidationSchems = {
                     .max(20)
                     .required(`${position.requiredErrorMsg}`),
                 [totalYear.name]: yup.string()
-                    .max(4)
+                    .max(3)
                     .required(`${totalYear.requiredErrorMsg}`),
                 [lastCTC.name]: yup.string()
-                    .max(10)
+                    .max(8)
                     .required(`${lastCTC.requiredErrorMsg}`)
             }))
             .min(1, 'Minimum 1 experience detail required')

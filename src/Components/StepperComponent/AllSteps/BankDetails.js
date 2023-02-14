@@ -8,12 +8,12 @@ function BankDetails() {
 
     return (
         <div>
-            <h2>BankDetails</h2>
+            <h2>Bank Details</h2>
             <Grid container rowSpacing={3} columnSpacing={3}>
                 {
                     Object.values(modelDetails).map(formField => (
                         <Grid item xs={4}>
-                            <TextInput label={formField.label} name={formField.name} />
+                            <TextInput label={formField.label} name={formField.name} required />
                         </Grid>
                     ))
                 }

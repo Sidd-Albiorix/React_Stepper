@@ -12,13 +12,13 @@ function OrgDetails() {
             <h2>Organization Details</h2>
             <Grid container rowSpacing={3} columnSpacing={3}>
                 <Grid item xs={4}>
-                    <DatePicker name={joiningDate.name} label={joiningDate.label} inputFormat="DD/MM/YYYY" fullWidth />
+                    <DatePicker name={joiningDate.name} label={joiningDate.label} inputFormat="DD/MM/YYYY" fullWidth required />
                 </Grid>
                 <Grid item xs={4}>
                     <DatePicker name={nextAppraisalDate.name} label={nextAppraisalDate.label} inputFormat="DD/MM/YYYY" fullWidth />
                 </Grid>
                 <Grid item xs={4}>
-                    <TextInput name={currCTC.name} label={currCTC.label} fullWidth type="number" />
+                    <TextInput name={currCTC.name} label={currCTC.label} fullWidth type="number" required />
                 </Grid>
             </Grid>
         </div>
