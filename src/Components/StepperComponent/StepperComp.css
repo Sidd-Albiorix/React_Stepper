@@ -1,0 +1,10 @@
+.stepperContentWrapper {
+    margin: 15px;
+}
+
+.stepperBtnGroup {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    justify-content: space-between;
+}
